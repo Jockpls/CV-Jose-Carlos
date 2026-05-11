@@ -1,0 +1,49 @@
+/* La versión normal */
+@font-face {
+    font-family: "FuturaPT";
+    src: url("fonts/futura-pt/FuturaPT-Book.ttf") format("truetype");
+    font-weight: 500; /* Normal */
+    font-style: normal;
+}
+
+/* La versión negrita */
+@font-face {
+    font-family: "FuturaPT";
+    src: url("fonts/futura-pt/FuturaPT-Bold.ttf") format("truetype");
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+/* La versión ligera o fina */
+@font-face {
+    font-family: "FuturaPT";
+    src: url("fonts/futura-pt/FuturaPT-Light.ttf") format("truetype");
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+body {
+    display: block;
+    margin: 1.2%;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    font-family: "FuturaPT", sans-serif;
+    font-weight: 500;
+}
+
+#header {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+}
+
+#foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 2%;
+    margin-left: 10%;
+}
