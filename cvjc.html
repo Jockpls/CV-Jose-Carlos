@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylecv.css">
-    <title>CV Jose Carlos</title>
-</head>
-<body>
-    <div class="header" id="header">
-        <div class="texto">
-            <h1 class="h1">INFORMACIÓN PERSONAL</h1>
-            <p>Jose Carlos Díaz Lozano</p>
-            <p><strong>Tel:</strong> +34622363958</p>
-            <p><strong>Correo:</strong> joseca.diaz.6@gmail.com</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylecv.css">
+        <title>CV Jose Carlos</title>
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <div class="Izquierda">
+                <div class="foto">
+                    <img src="foto.jpeg" alt="Foto de Jose Carlos">
+                </div>
+                <div id="nombre">
+                    <h1>Jose Carlos Díaz Lozano</h1>
+                    <p>Web Developer</p>
+                </div>
+                
+                    <h2>Formación</h2>
+            <ul>
+                <li>Graduado en Desarrollo de Aplicaciones Web. <br>
+                    IES Gran Capitán 2025/2027</li>
+                <li>Especialización en Inteligencia Artificial y Big Data.<br>
+                    IES Gran Capitán 2027/2028</li>
+            </ul>
+                    
+            <h2>Experiencia</h2>
+                <ul>
+                    <li>Página web de Lag Mentol, empresa de teatro.<br>
+                        Diseñador y desarrollador de la página utilizando HTML, CSS y JavaScript.</li>
+                    <li>Página web de Amberly Artelier, empresa de Velas y productos artesanales.
+                        <br>Diseñador y desarrollador de la página utilizando HTML, CSS, JavaScript para el frontend y TypeScript para el backend.</li>
+                    <li>Aplicación web para la cocina y restaurante del IES Gran Capitán y sus grados formativos de hostelería.<br> 
+                        Diseñador y desarrollador de la aplicación utilizando HTML, CSS, JavaScript para el frontend y TypeScript para el backend,<br>
+                        utilizando una base de datos No Relacional en MongoDB.</li>
+                </ul>
         </div>
-        <div id="foto">
-            <img src="foto.jpeg" alt="Foto de Jose Carlos" class="profile-pic" id="foto">
-        </div>
-    </div>
+                            
+                <div class="Derecha">
+                    <div id="referencias">
+                    <p>Teléfono +34 622363958</p>
+                    <p>Correo electrónico: joseca.diaz.6@gmail.com</p>
 
-
-    <div class="profile">
-        <h1 class="h1">PERFIL PROFESIONAL</h1>
-        <h2 id="formacion">Formación:</h2>
-        <ul>
-            <li>Graduado en Desarrollo de Aplicaciones Web. <br>
-                IES Gran Capitán 2025/2027</li>
-
-            <li>Especialización en Inteligencia Artificial y Big Data.<br>
-                IES Gran Capitán 2027/2028</li>
-        </ul>
-
-        <h2 id="experiencia">Experiencia:</h2>
-        <ul>
-            <li>Página web de <strong>Lag Mentol</strong>, empresa de teatro.<br>
-                Diseñador y desarrollador de la página utilizando HTML, CSS y JavaScript.</li>
-
-            <li>Página web de <strong>Amberly Artelier</strong>, empresa de Velas y productos artesanales.
-                <br>Diseñador y desarrollador de la página utilizando HTML, CSS, JavaScript para el frontend y TypeScript para el backend.</li>
-
-            <li>Aplicación web para la <strong>cocina y restaurante del IES Gran Capitán</strong> y sus grados formativos de hostelería.<br> 
-                Diseñador y desarrollador de la aplicación utilizando HTML, CSS, JavaScript para el frontend y TypeScript para el backend,<br>
-                utilizando una base de datos No Relacional en MongoDB.</li>
-        </ul>
-    </div>
-
+                <h3>Referencias</h3>
+                  <ul class="lista-capsulas">
+                    <li><a href="https://www.linkedin.com/in/josé-carlos-díaz-lozano-6a3799207/">LinkedIn</a></li>
+                    <li><a href="https://github.com/Jockpls">GitHub</a></li>
+                  </ul>
+                </div>
+                <h2>Habilidades</h2>
+                <h3>Desarrollo web</h3> 
+                <ul class="lista-capsulas">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+                <h3>Inteligencia Artificial</h3>
+                <ul class="lista-capsulas">
+                    <li>Python</li> 
+                    <li>TensorFlow</li> 
+                    <li>Scikit-learn</li>
+                </ul>
+                
+                <h3>Big Data</h3> 
+                <ul class="lista-capsulas">
+                    <li>Hadoop</li>
+                    <li>Spark</li>
+                </ul>
+                    <h3>Gestión de proyectos</h3>
+                    <ul class="lista-capsulas"> 
+                        <li>Agile</li>
+                        <li>Scrum</li>
+                    </ul>
+                    <h3>Tecnologías BBDD</h3>
+                    <ul class="lista-capsulas">  
+                        <li>MySQL</li> 
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                    <h3>Tecnologías</h3>
+                    <ul class="lista-capsulas">  
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
     
-    <div class="skills">
-        <h1 class="h1">HABILIDADES E IDIOMAS</h1>
-        <ul>
-            <li><strong>Desarrollo web</strong>: HTML, CSS, JavaScript, React, Node.js</li>
-            <li><strong>Inteligencia Artificial</strong>: Python, TensorFlow, Scikit-learn</li>
-            <li><strong>Big Data</strong>: Hadoop, Spark</li>
-            <li><strong>Gestión de proyectos</strong>: Agile, Scrum</li>
-            <li><strong>Tecnologías BBDD</strong>: MySQL, MongoDB, PostgreSQL</li>
-            <li><strong>Tecnologías</strong>: Git, Docker, Kubernetes</li>
-            <li><strong>Inglés</strong>: Nivel avanzado, actualmente preparando el certificado C1 por Cambridge</li>
-        </ul>
-
-
-    </div>
-    <div class="footer">
-        <h1 class="h1">INFORMACIÓN DE CONTACTO</h1>
-        <p>Podrán encontrar mis referencias en mi <a href="https://www.linkedin.com/in/josé-carlos-díaz-lozano-6a3799207/">LinkedIn</a> y <a href="https://github.com/Jockpls">GitHub</a>.</p>
-    </div>
-</body>
+                    <h3>Idiomas</h3>
+                    <ul class="lista-capsulas">  
+                        <li>Inglés</li>
+                        <li>Español nativo</li>
+                    </ul>
+            </div>
+        </div>
+    </body>
 </html>
