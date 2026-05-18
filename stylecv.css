@@ -1,63 +1,75 @@
 @font-face {
     font-family: "FuturaPT";
     src: url("fonts/futura-pt/FuturaPT-Book.ttf") format("truetype");
-    font-weight: 500; /* Normal */
+    font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
     src: url("fonts/futura-pt/FuturaPT-Bold.ttf") format("truetype");
-    font-weight: 650; /* Bold */
+    font-weight: 650;
     font-style: normal;
 }
 
 @font-face {
     font-family: "FuturaPT";
     src: url("fonts/futura-pt/FuturaPT-Light.ttf") format("truetype");
-    font-weight: 300; /* Light */
+    font-weight: 300;
     font-style: normal;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "FuturaPT", sans-serif;
-    font-weight: 500;
 }
 
 body {
+    font-family: "FuturaPT", sans-serif;
+    font-weight: 500;
     font-size: 20px;
     background-color: #0091d4;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .container {
     background-color: #f5f5f5;
     max-width: 900px;
-    margin: 60px auto;
-    height: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: auto;
     padding: 20px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 20px;
 }
 
 #nombre {
     text-align: center;
-
 }
 
-#referencias h3{
-    font-weight:700px;
+#nombre h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+#nombre p {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    margin-top: 8px;
+}
+
+#referencias h3 {
+    font-weight: 700;
     text-align: center;
 }
 
 .foto {
-    width: 200px;
-    height: 200px;
+    width: min(200px, 60vw);
+    height: min(200px, 60vw);
     border-radius: 50%;
     overflow: hidden;
     margin: 25px auto;
@@ -71,26 +83,25 @@ body {
 }
 
 .Izquierda {
-    flex: 2;
+    flex: 2 1 320px;
     padding: 30px;
     text-align: left;
 }
 
-.Izquierda p {
-    line-height: 2;
+.Izquierda p,
+.Izquierda li {
+    line-height: 1.8;
 }
 
 .Derecha {
-    flex: 1;
-    padding: 50px 10px;
+    flex: 1 1 260px;
+    padding: 30px 10px;
     text-align: left;
 }
 
-.Derecha p{
+.Derecha p {
     line-height: 2;
 }
-
-
 
 h2 {
     text-align: center;
@@ -98,34 +109,85 @@ h2 {
     padding: 15px;
     color: #fff;
     margin: 30px 0;
-    font-size: 20px;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     border-radius: 50px;
 }
 
-h3{
+h3 {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 5px;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
 }
 
 .lista-capsulas {
-    list-style-type: none; 
-    padding: 0;            
-    margin: 0;
-    display: flex;         
-    flex-wrap: wrap;       
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 16px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;             
-  }
+    justify-content: center;
+}
 
-  .lista-capsulas li {
+.lista-capsulas li {
     background-color: #e0e0e0;
-    color: #333333;           
-    padding: 8px 16px;         
-    border-radius: 50px;       
-    font-family: sans-serif;   
+    color: #333333;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-family: sans-serif;
     font-size: 14px;
-    
-    border: 1px solid #cccccc; 
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
-  }
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.lista-capsulas a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.lista-capsulas a:hover {
+    color: #0091d4;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .Izquierda,
+    .Derecha {
+        flex: 1 1 100%;
+        padding: 16px;
+    }
+
+    h2 {
+        margin: 20px 0;
+        padding: 12px;
+    }
+
+    .foto {
+        border-width: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .lista-capsulas li {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
