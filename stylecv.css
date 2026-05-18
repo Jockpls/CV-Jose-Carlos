@@ -150,6 +150,30 @@ h3 {
     color: #0091d4;
 }
 
+.lista-enlaces li {
+    background-color: #e8f6fc;
+    border-color: #0091d4;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.lista-enlaces a {
+    color: #0077b3;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 600;
+}
+
+.lista-enlaces li:hover {
+    background-color: #52575a;
+    box-shadow: 0 3px 8px rgba(0, 145, 212, 0.35);
+}
+
+.lista-enlaces li:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
 ul {
     padding-left: 1.2rem;
 }
