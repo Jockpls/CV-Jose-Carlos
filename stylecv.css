@@ -215,3 +215,16 @@ ul {
         padding: 6px 12px;
     }
 }
+
+.boton-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#boton-estilo {
+    background-color: #c2bcbc;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 20px;
+}
